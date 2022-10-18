@@ -1,5 +1,7 @@
 # Rauversion Documentation
 
+![Deploy Status](https://github.com/rauversion/docs/actions/workflows/deploy-docusaurus.yml/badge.svg)
+
 This is the [Rauversion Documentation](https://github.com/rauversion/docs). Is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 You can read the docs at https://docs.rauversion.com
@@ -37,6 +39,15 @@ $ make deploy
 ```
 
 This command is a convenient way to build the website and push to the `gh-pages` branch.
+
+Using Github Workflow:
+
+Any push to the `main` branch will be compiled and sent to the `gh-pages` branch.
+
+### Contributors
+
+Please make a Pull Request and *Squash* the commits before merging
+to main.
 
 ## License
 

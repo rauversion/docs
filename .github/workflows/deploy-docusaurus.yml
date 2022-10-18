@@ -32,7 +32,7 @@ jobs:
         with:
           target_branch: gh-pages
           build_dir: build
-          commit_message: ${{ github.sha }}
+          commit_message: Deploy ${{ github.sha }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
