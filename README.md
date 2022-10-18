@@ -46,9 +46,10 @@ Any push to the `main` branch will be compiled and sent to the `gh-pages` branch
 
 ### Contributors
 
-Please make a Pull Request and *Squash* the commits before merging
+Please, make a _pull request_ and **squash** the commits before merging
 to main.
 
 ## License
 
-[CC-BY-SA 4.0](LICENSE)
+- Docs: [CC-BY-SA 4.0](LICENSE)
+- Code: [MIT](LICENSE.code)

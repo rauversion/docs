@@ -38,7 +38,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/rauversion/docs',
+            'https://github.com/rauversion/docs/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -93,6 +93,10 @@ const config = {
             title: 'More',
             items: [
               {
+                label: 'Rauversion',
+                to: 'https://rauversion.com/',
+              },
+              {
                 label: 'Blog',
                 to: 'https://rauversion.com/articles',
               },
@@ -103,7 +107,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Rauversion.com. Built with Docusaurus.`,
+        copyright: `Copyright © ${(new Date().getFullYear()) == 2022 ? '2022' : '2022 - ' + (new Date().getFullYear()).toString()} <a href="https://rauversion.com" style="color:white">Rauversion.com</a>. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
