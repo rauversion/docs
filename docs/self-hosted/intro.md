@@ -1,5 +1,6 @@
 ---
-sidebar_position: 1
+title: "Getting Started"
+sidebar_label: "getting started"
 ---
 
 # Tutorial Intro

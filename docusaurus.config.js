@@ -14,7 +14,6 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   trailingSlash: false,
-
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'rauversion', // Usually your GitHub org/user name.
@@ -35,8 +34,6 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/rauversion/docs/tree/main/',
         },
@@ -50,6 +47,17 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
+      announcementBar: {
+        id: "star_us",
+        content:
+          '⭐️ If you like rauversion, give it a star on <a href="https://github.com/rauversion/rauversion-phx">GitHub</a> and follow us on <a href="https://twitter.com/rauversion">Twitter</a>!',
+        isCloseable: true,
+      },
       navbar: {
         title: 'Rauversion Docs',
         logo: {
@@ -61,7 +69,27 @@ const config = {
           {
             type: 'docsVersionDropdown',
           },
-          {to: 'https://rauversion.com/articles', label: 'Blog', position: 'left'},
+          
+          {
+            to: "docs/self-hosted",
+            activeBasePath: "self-hosted",
+            label: "Self Hosted",
+            position: "right",
+          },
+          {
+            to: "docs/product",
+            activeBaseRegex: "product|user-guide",
+            label: "User Guide",
+            position: "right",
+          },
+          {
+            to: "docs/contributing-guide",
+            activeBasePath: "contributing-guide",
+            label: "Contributing Guide",
+            position: "right",
+          },
+
+          {to: 'https://rauversion.com/articles', label: 'Blog', position: 'right'},
           {
             href: 'https://github.com/rauversion/',
             label: 'GitHub',
