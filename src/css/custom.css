@@ -8,11 +8,11 @@
 /* You can override the default Infima variables here. */
 
 :root {
-  --ifm-color-primary: #0af5c2;
-  --ifm-color-primary-dark: #079c7c;
-  --ifm-color-primary-darker: #09ae8a;
-  --ifm-color-primary-darkest: #08d3a7;
-  --ifm-color-primary-light: #0af5c2;
+  --ifm-color-primary: #efe;
+  --ifm-color-primary-dark: #ebefee;
+  --ifm-color-primary-darker: #bcbebd;
+  --ifm-color-primary-darkest: #757776;
+  --ifm-color-primary-light: #e2e5e5;
   --ifm-color-primary-lighter: #64f8d8;
   --ifm-color-primary-lightest: #0af5ed;
   --ifm-code-font-size: 75%;
@@ -27,8 +27,10 @@
   --ifm-h1-font-size: calc(1.375rem + 1vw) !important;
   --ifm-navbar-height: 5rem;
   --ifm-navbar-link-font-size: 1.0625rem;
-  --ifm-navbar-link-color: #0af5c2;
-  --ifm-h1-font-size: 2.4rem !important;
+  --ifm-navbar-link-color: #d8d4d4;
+  --ifm-navbar-link-hover-color: #ccc;
+  --ifm-menu-color-active: #efe;
+  --ifm-menu-color: #efe;
   --docusaurus-announcement-bar-height: 2.4rem !important;
   --ifm-footer-background-color: #000;
 }
@@ -193,6 +195,6 @@ html[data-theme="light"] .navbar__link--active {
 }
 
 div[class^='announcementBar_'] {
-  background-color: var(--ifm-color-primary);
-  color: rgb(60, 57, 57);
+  background-color: #000;
+  color: rgb(238, 232, 232);
 }
